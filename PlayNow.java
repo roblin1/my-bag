@@ -63,8 +63,7 @@ public class PlayNow extends Application implements EventHandler<ActionEvent> {
         pane = new BorderPane();
 
         // displays NBA2K20 cover
-        //Image image = new Image("file:cover.png");
-        Image image = new Image("file:///C://Users/blade/IntellijProjects/HerHouse/nina.gif");
+        Image image = new Image("file:cover.png");
         ImageView imageView = new ImageView();
         imageView.setFitHeight(365);
         imageView.setFitWidth(260);
@@ -375,8 +374,7 @@ public class PlayNow extends Application implements EventHandler<ActionEvent> {
             videoPlayer.stop(); });
 
         // *** HOW TO GET EVERYTHING TO SHOW UP ON THE SCREEN ***
-        //BackgroundImage bi = new BackgroundImage(new Image("file:great.jpg"), BackgroundRepeat.REPEAT, BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, new BackgroundSize(1.0, .80, true, true, false, false));
-        BackgroundImage bi = new BackgroundImage(new Image("file:///C://Users/blade/IntellijProjects/HerHouse/nina_agdal.png"), BackgroundRepeat.REPEAT, BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
+        BackgroundImage bi = new BackgroundImage(new Image("file:great.jpg"), BackgroundRepeat.REPEAT, BackgroundRepeat.REPEAT, BackgroundPosition.DEFAULT, new BackgroundSize(1.0, .80, true, true, false, false));
         pane.setBackground(new Background(bi));
         Scene scene = new Scene(pane, 1000, 500);
         stage.getIcons().add(new Image("file:nbalogo.jpg"));
